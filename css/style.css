@@ -1,0 +1,209 @@
+/* CSS Reset  */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+/* Navbar LOGO */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 80px;
+  margin: 3px 6px;
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+/* Navbar: List Style  */
+#navbar ul {
+  display: flex;
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#navbar ul li {
+  list-style: none;
+}
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 22px;
+  display: block;
+  border-radius: 20px;
+}
+#navbar li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 633px;
+  align-items: center;
+  justify-content: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../image/bg1.jpg") no-repeat center center/cover;
+  height: 700px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.75;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  color: black;
+  top: auto;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#home .btn{
+  border: 0;
+}
+#home .btn:hover{
+  color: black;
+}
+/* Service Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  background-color: rgb(212, 203, 203);
+  margin: 2px 55px;
+  padding: 34px;
+  border-radius: 28px;
+  margin-bottom: 20px;
+}
+#services .box:hover {
+  background-color: antiquewhite;
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+/* Client Section */
+#client-section{
+  position: relative;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url('../image/bg.jpg') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#client{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#client img{
+  height: 120px;
+}
+.client-item{
+  padding: 34px;
+}
+
+/* Contact Section */
+#contact-section{
+  position: relative;
+}
+#contact-section::before{
+  content: "";
+  position: absolute;
+  background: url('../image/contact.jpg') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius:9px;
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+/* Footer */
+footer{
+  color: white;
+  background-color: black;
+  padding: 3px 22px;
+}
+
+/* Utiliy Classes */
+.h-primary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.8rem;
+  padding: 15px;
+}
+.h-secondary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  padding: 15px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  border-radius: 15px;
+  color: white;
+  margin: 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
